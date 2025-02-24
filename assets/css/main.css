@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@font-face {
+    font-family: "BaiJamjureeLight";
+    src: url("../fonts/BaiJamjuree-Light.ttf");
+}
+
+@font-face {
+    font-family: "BaiJamjureeMedium";
+    src: url("../fonts/BaiJamjuree-Medium.ttf");
+}
+
+@font-face {
+    font-family: "BaiJamjureeRegular";
+    src: url("../fonts/BaiJamjuree-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BaiJamjureeSemiBold";
+    src: url("../fonts/BaiJamjuree-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "BaiJamjureeBold";
+    src: url("../fonts/BaiJamjuree-Bold.ttf");
+}
+
+@theme {
+    --font-BaiJamjureeLight: "BaiJamjureeLight";
+    --font-BaiJamjureeMedium: "BaiJamjureeMedium";
+    --font-BaiJamjureeRegular: "BaiJamjureeRegular";
+    --font-BaiJamjureeSemiBold: "BaiJamjureeSemiBold";
+    --font-BaiJamjureeBold: "BaiJamjureeBold";
+}
+
+
+html,
+body {
+  @apply text-slate-950;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-cyan-950;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-amber-200;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-amber-600;
+}
+.main-theme{
+  @apply w-screen h-screen flex font-BaiJamjureeSemiBold text-slate-900 bg-slate-200 dark:bg-slate-900 dark:text-slate-300;
+}

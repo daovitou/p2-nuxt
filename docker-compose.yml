@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: p2frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - production-test
+
+networks:
+  production-test:
+    name: production-test
+    external: true
